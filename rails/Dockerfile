@@ -9,9 +9,10 @@ COPY Gemfile.lock /myapp/Gemfile.lock
 RUN gem update --system
 RUN bundle update --bundler
 
-RUN bundle install
+RUN bundle _2.6.2_ install
 COPY . /myapp
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
+
