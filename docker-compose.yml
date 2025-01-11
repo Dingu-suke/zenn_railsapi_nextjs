@@ -17,6 +17,7 @@ services:
     command: bash -c "tail -f log/development.log"
     volumes:
       - ./rails:/myapp
+      - bundle_data:/usr/local/bundle
     ports:
       - 3000:3000
     depends_on:
@@ -35,3 +36,4 @@ services:
       - "8000:3000"
 volumes:
   mysql_data:
+  bundle_data:
