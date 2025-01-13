@@ -15,6 +15,7 @@ RSpec.describe "Api::V1::Current::Users", type: :request do
         expect(response).to have_http_status(:ok)
       end
     end
+
     context "ヘッダー情報が空のままリクエストが送信された時" do
       let(:headers) { nil }
 
