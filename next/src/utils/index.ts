@@ -10,4 +10,3 @@ export const fetcher = (url: string) =>
     })
 // 受け取ったurl に対して GET メソッドのリクエストを送信。
 // 返り値として res.data を返し、以上が発生したときはエラー内容をログに出力させる
-
