@@ -44,6 +44,7 @@ group :development, :test do
 
   # テスト用データを作成する
   gem "factory_bot_rails"
+  gem "faker"
 
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
