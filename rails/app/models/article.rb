@@ -4,7 +4,6 @@ class Article < ApplicationRecord
   validates :title, :content, presence: true, if: :published?
   validate :verify_only_one_unsaved_status_is_allowed
 
-
   private
 
     def verify_only_one_unsaved_status_is_allowed
