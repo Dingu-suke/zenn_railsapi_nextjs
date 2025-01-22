@@ -7,9 +7,9 @@ COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 
 RUN gem update --system
-RUN bundle update --bundler
+RUN gem install bundler:2.6.2
+RUN bundle install
 
-RUN bundle _2.6.2_ install
 COPY . /myapp
 
 COPY entrypoint.sh /usr/bin/
