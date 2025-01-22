@@ -10,7 +10,7 @@ class Api::V1::Current::ArticlesController < Api::V1::BaseController
     unsaved_article = current_user.articles.unsaved.first || current_user.articles.create!(status: :unsaved)
     render json: unsaved_article
   end
-  
+
   def update
     article = current_user.articles.find(params[:id])
     article.update!(article_params)
