@@ -1,18 +1,25 @@
-import PersonIcon from '@mui/icons-material/Person'
 import ArticleIcon from '@mui/icons-material/Article'
+import PersonIcon from '@mui/icons-material/Person'
 import UpdateIcon from '@mui/icons-material/Update'
-import Error from "@/components/Error"
-import Loading from "@/components/Loading"
-import MarkdownText from "@/components/MarkdownText"
-import { fetcher } from "@/utils"
-import { Box, Card, Container, List, ListItem, ListItemText, Typography } from "@mui/material"
-import camelcaseKeys from "camelcase-keys"
+import {
+  Box,
+  Card,
+  Container,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from '@mui/material'
+import camelcaseKeys from 'camelcase-keys'
 
-import { useRouter } from "next/router"
-import useSWR from "swr"
+import { useRouter } from 'next/router'
+import useSWR from 'swr'
 import ArticleInfo from './metaListItem'
 import MetaListItem from './metaListItem'
-
+import Error from '@/components/Error'
+import Loading from '@/components/Loading'
+import MarkdownText from '@/components/MarkdownText'
+import { fetcher } from '@/utils'
 
 type ArticleProps = {
   title: string
