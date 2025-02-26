@@ -3,12 +3,10 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider } from '@mui/material/styles'
 import { AppProps } from 'next/app'
 import * as React from 'react'
-
+import Header from '@/components/Header'
 import createEmotionCache from '@/styles/createEmotionCache'
 import theme from '@/styles/theme'
 import '@/styles/destyle.css'
-import Header from '@/components/Header'
-
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()

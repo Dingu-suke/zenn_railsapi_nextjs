@@ -2,14 +2,13 @@ import { Box, Container, Grid, Pagination } from '@mui/material'
 import camelcaseKeys from 'camelcase-keys'
 import { NextPage } from 'next'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import useSWR from 'swr'
 import ArticleCard from '@/components/ArticleCard'
-import { fetcher } from '@/utils'
-import { styles } from '@/styles'
-import Loading from '@/components/Loading'
-
-import { useRouter } from 'next/router'
 import Error from '@/components/Error'
+import Loading from '@/components/Loading'
+import { styles } from '@/styles'
+import { fetcher } from '@/utils'
 
 type ArticleProps = {
   id: number

@@ -1,6 +1,6 @@
-import { styles } from "@/styles"
-import { Box } from "@mui/material"
-import Image from "next/image"
+import { Box } from '@mui/material'
+import Image from 'next/image'
+import { styles } from '@/styles'
 
 const Loading = () => {
   return (

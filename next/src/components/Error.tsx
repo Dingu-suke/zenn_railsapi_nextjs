@@ -1,4 +1,4 @@
-import { Card, CardContent, Container } from "@mui/material"
+import { Card, CardContent, Container } from '@mui/material'
 
 const Error = () => {
   return (

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Header = () => {
-  return(
+  return (
     <AppBar
       position="static"
       sx={{
@@ -18,9 +18,9 @@ const Header = () => {
           sx={{
             display: 'flex',
             justifyContent: 'space-between',
-            alighItems: 'center'
+            alighItems: 'center',
           }}
-        > 
+        >
           <Box>
             <Link href="/">
               <Image src="/logo.png" width={133} height={40} alt="logo" />
@@ -28,15 +28,15 @@ const Header = () => {
           </Box>
           <Box>
             <Button
-                color="primary"
-                variant="contained"
-                sx={{
-                  color: 'white',
-                  textTransform: 'none',
-                  fontSize: 16,
-                  borderRadius: 2,
-                  boxShadow: 'none',
-                }}
+              color="primary"
+              variant="contained"
+              sx={{
+                color: 'white',
+                textTransform: 'none',
+                fontSize: 16,
+                borderRadius: 2,
+                boxShadow: 'none',
+              }}
             >
               Sign in
             </Button>
@@ -52,11 +52,11 @@ const Header = () => {
                 ml: 2,
               }}
             >
-              Sign up 
+              Sign up
             </Button>
           </Box>
         </Box>
-      </Container> 
+      </Container>
     </AppBar>
   )
 }

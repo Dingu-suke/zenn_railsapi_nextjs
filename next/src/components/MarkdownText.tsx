@@ -7,7 +7,6 @@ type MarkdownTextProps = {
 }
 
 const MarkdownText = (props: MarkdownTextProps) => {
-  
   return (
     <Box
       className="znc"

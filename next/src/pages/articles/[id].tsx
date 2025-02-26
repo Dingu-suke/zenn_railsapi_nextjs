@@ -1,20 +1,11 @@
 import ArticleIcon from '@mui/icons-material/Article'
 import PersonIcon from '@mui/icons-material/Person'
 import UpdateIcon from '@mui/icons-material/Update'
-import {
-  Box,
-  Card,
-  Container,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from '@mui/material'
+import { Box, Card, Container, List, Typography } from '@mui/material'
 import camelcaseKeys from 'camelcase-keys'
 
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
-import ArticleInfo from './metaListItem'
 import MetaListItem from './metaListItem'
 import Error from '@/components/Error'
 import Loading from '@/components/Loading'
